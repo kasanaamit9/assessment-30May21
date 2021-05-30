@@ -1,0 +1,142 @@
+{
+	"id": "5b1a5f11-af7b-4dee-8796-061483f5efa4",
+	"name": "Wipro",
+	"timestamp": "2021-05-30T10:03:48.560Z",
+	"collection_id": "02839d1f-c043-4f0d-a8b1-f20a01f47179",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 4,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "9bcef2a2-6c23-4a78-bbe0-14ddb543eb0f",
+			"name": "http://localhost:5000/announcement/list_all",
+			"url": "http://localhost:5000/announcement/list_all",
+			"time": 529,
+			"responseCode": {
+				"code": 401,
+				"name": "UNAUTHORIZED"
+			},
+			"tests": {
+				"Status code is 401": true
+			},
+			"testPassFailCounts": {
+				"Status code is 401": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				529
+			],
+			"allTests": [
+				{
+					"Status code is 401": true
+				}
+			]
+		},
+		{
+			"id": "c88cb12c-2698-4e7c-baea-1e75ee909f41",
+			"name": "http://localhost:5000/announcement/list_all",
+			"url": "http://localhost:5000/announcement/list_all",
+			"time": 509,
+			"responseCode": {
+				"code": 401,
+				"name": "UNAUTHORIZED"
+			},
+			"tests": {
+				"Status code is 401": true
+			},
+			"testPassFailCounts": {
+				"Status code is 401": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				509
+			],
+			"allTests": [
+				{
+					"Status code is 401": true
+				}
+			]
+		},
+		{
+			"id": "a9da4381-8959-4223-8f5b-339d5bd68915",
+			"name": "http://localhost:5000/announcement/add",
+			"url": "http://localhost:5000/announcement/add",
+			"time": 532,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				532
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "16cf2bb0-2cc1-404d-ab2a-d2a372a582f3",
+			"name": "http://localhost:5000/announcement/list_all",
+			"url": "http://localhost:5000/announcement/list_all",
+			"time": 527,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				527
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2097,
+	"collection": {
+		"requests": [
+			{
+				"id": "9bcef2a2-6c23-4a78-bbe0-14ddb543eb0f",
+				"method": "GET"
+			},
+			{
+				"id": "c88cb12c-2698-4e7c-baea-1e75ee909f41",
+				"method": "GET"
+			},
+			{
+				"id": "a9da4381-8959-4223-8f5b-339d5bd68915",
+				"method": "PUT"
+			},
+			{
+				"id": "16cf2bb0-2cc1-404d-ab2a-d2a372a582f3",
+				"method": "GET"
+			}
+		]
+	}
+}

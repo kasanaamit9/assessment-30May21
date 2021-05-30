@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Announcement1",
+        "description": "description1",
+        "date": "date1"
+    },
+    {
+        "title": "Announcement2",
+        "description": "description2",
+        "date": "date2"
+    },
+    {
+        "date": "date3",
+        "description": "description3",
+        "title": "Announcement3"
+    },
+    {
+        "date": "date4",
+        "description": "description4",
+        "title": "Announcement4"
+    },
+    {
+        "date": "30-05-2021",
+        "description": "description5",
+        "title": "Announcement5"
+    }
+]

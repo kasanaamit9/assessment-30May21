@@ -1,0 +1,933 @@
+{
+	"info": {
+		"_postman_id": "02839d1f-c043-4f0d-a8b1-f20a01f47179",
+		"name": "Wipro",
+		"description": "showing testing of authorization for GET API and success cases for both GET and PUT APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/announcement/list_all",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1902bc25-f28d-41af-aa72-738da4910bf8",
+						"exec": [
+							"pm.test(\"Status code is 401\", function () { pm.response.to.have.status(401); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"host": true,
+					"user-agent": true,
+					"accept-encoding": true,
+					"connection": true,
+					"accept": true
+				},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"date\": \"date5\",\r\n  \"description\": \"description5\",\r\n  \"title\": \"Announcement5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/announcement/list_all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"announcement",
+						"list_all"
+					]
+				},
+				"description": "test- without auth header"
+			},
+			"response": [
+				{
+					"name": "http://localhost:5000/announcement/list_all",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"date\": \"date5\",\r\n  \"description\": \"description5\",\r\n  \"title\": \"Announcement5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/announcement/list_all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"announcement",
+								"list_all"
+							]
+						}
+					},
+					"status": "UNAUTHORIZED",
+					"code": 401,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "54"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/1.0.1 Python/3.7.9"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 May 2021 09:45:35 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "Authorization failed! 'username'/'password' NOT found!"
+				},
+				{
+					"name": "http://localhost:5000/announcement/list_all",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"date\": \"date5\",\r\n  \"description\": \"description5\",\r\n  \"title\": \"Announcement5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/announcement/list_all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"announcement",
+								"list_all"
+							]
+						}
+					},
+					"status": "UNAUTHORIZED",
+					"code": 401,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "54"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/1.0.1 Python/3.7.9"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 May 2021 09:45:01 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "Authorization failed! 'username'/'password' NOT found!"
+				},
+				{
+					"name": "http://localhost:5000/announcement/list_all",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"date\": \"date5\",\r\n  \"description\": \"description5\",\r\n  \"title\": \"Announcement5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/announcement/list_all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"announcement",
+								"list_all"
+							]
+						}
+					},
+					"status": "UNAUTHORIZED",
+					"code": 401,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "54"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/1.0.1 Python/3.7.9"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 May 2021 09:16:15 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "Authorization failed! 'username'/'password' NOT found!"
+				},
+				{
+					"name": "http://localhost:5000/announcement/list_all",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"date\": \"date5\",\r\n  \"description\": \"description5\",\r\n  \"title\": \"Announcement5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/announcement/list_all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"announcement",
+								"list_all"
+							]
+						}
+					},
+					"status": "UNAUTHORIZED",
+					"code": 401,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "54"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/1.0.1 Python/3.7.9"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 May 2021 09:59:53 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "Authorization failed! 'username'/'password' NOT found!"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:5000/announcement/list_all",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "376962ef-2f22-4a8d-9a1d-bf896fcb1ad2",
+						"exec": [
+							"pm.test(\"Status code is 401\", function () { pm.response.to.have.status(401); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"host": true,
+					"user-agent": true,
+					"accept-encoding": true,
+					"connection": true,
+					"accept": true
+				},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "useruser",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"date\": \"date5\",\r\n  \"description\": \"description5\",\r\n  \"title\": \"Announcement5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/announcement/list_all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"announcement",
+						"list_all"
+					]
+				},
+				"description": "test- incorrect auth username"
+			},
+			"response": [
+				{
+					"name": "http://localhost:5000/announcement/list_all",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"date\": \"date5\",\r\n  \"description\": \"description5\",\r\n  \"title\": \"Announcement5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/announcement/list_all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"announcement",
+								"list_all"
+							]
+						}
+					},
+					"status": "UNAUTHORIZED",
+					"code": 401,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "57"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/1.0.1 Python/3.7.9"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 May 2021 10:00:36 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "Authorization failed! 'username'/'password' is incorrect!"
+				},
+				{
+					"name": "http://localhost:5000/announcement/list_all",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"date\": \"date5\",\r\n  \"description\": \"description5\",\r\n  \"title\": \"Announcement5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/announcement/list_all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"announcement",
+								"list_all"
+							]
+						}
+					},
+					"status": "UNAUTHORIZED",
+					"code": 401,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "54"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/1.0.1 Python/3.7.9"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 May 2021 09:16:15 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "Authorization failed! 'username'/'password' NOT found!"
+				},
+				{
+					"name": "http://localhost:5000/announcement/list_all",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"date\": \"date5\",\r\n  \"description\": \"description5\",\r\n  \"title\": \"Announcement5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/announcement/list_all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"announcement",
+								"list_all"
+							]
+						}
+					},
+					"status": "UNAUTHORIZED",
+					"code": 401,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "57"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/1.0.1 Python/3.7.9"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 May 2021 09:45:47 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "Authorization failed! 'username'/'password' is incorrect!"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:5000/announcement/add",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2a7e3222-af42-4de0-b042-491324d70709",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"host": true,
+					"user-agent": true,
+					"accept-encoding": true,
+					"connection": true,
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"date\": \"30-05-2021\",\r\n  \"description\": \"description5\",\r\n  \"title\": \"Announcement5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/announcement/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"announcement",
+						"add"
+					]
+				},
+				"description": "test- add announcement successfully"
+			},
+			"response": [
+				{
+					"name": "http://localhost:5000/announcement/add",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"date\": \"30-05-2021\",\r\n  \"description\": \"description5\",\r\n  \"title\": \"Announcement5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/announcement/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"announcement",
+								"add"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "40"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/1.0.1 Python/3.7.9"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 May 2021 10:02:04 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "Announcement has been added successfully"
+				},
+				{
+					"name": "http://localhost:5000/announcement/add",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"date\": \"30-05-2021\",\r\n  \"description\": \"description5\",\r\n  \"title\": \"Announcement5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/announcement/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"announcement",
+								"add"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "40"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/1.0.1 Python/3.7.9"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 May 2021 09:47:02 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "Announcement has been added successfully"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:5000/announcement/list_all",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8d976650-4d93-4688-b6b9-43548387c0c2",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"host": true,
+					"user-agent": true,
+					"accept-encoding": true,
+					"connection": true,
+					"accept": true
+				},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"date\": \"date5\",\r\n  \"description\": \"description5\",\r\n  \"title\": \"Announcement5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/announcement/list_all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"announcement",
+						"list_all"
+					]
+				},
+				"description": "test- get all announcements successfully"
+			},
+			"response": [
+				{
+					"name": "http://localhost:5000/announcement/list_all",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"date\": \"date5\",\r\n  \"description\": \"description5\",\r\n  \"title\": \"Announcement5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/announcement/list_all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"announcement",
+								"list_all"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "567"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/1.0.1 Python/3.7.9"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 May 2021 10:01:05 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Announcements\": [\n        {\n            \"date\": \"date1\",\n            \"description\": \"description1\",\n            \"title\": \"Announcement1\"\n        },\n        {\n            \"date\": \"date2\",\n            \"description\": \"description2\",\n            \"title\": \"Announcement2\"\n        },\n        {\n            \"date\": \"date3\",\n            \"description\": \"description3\",\n            \"title\": \"Announcement3\"\n        },\n        {\n            \"date\": \"date4\",\n            \"description\": \"description4\",\n            \"title\": \"Announcement4\"\n        },\n        {\n            \"date\": \"30-05-2021\",\n            \"description\": \"description5\",\n            \"title\": \"Announcement5\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "http://localhost:5000/announcement/list_all",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"date\": \"date5\",\r\n  \"description\": \"description5\",\r\n  \"title\": \"Announcement5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/announcement/list_all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"announcement",
+								"list_all"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "567"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/1.0.1 Python/3.7.9"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 May 2021 09:46:31 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Announcements\": [\n        {\n            \"date\": \"date1\",\n            \"description\": \"description1\",\n            \"title\": \"Announcement1\"\n        },\n        {\n            \"date\": \"date2\",\n            \"description\": \"description2\",\n            \"title\": \"Announcement2\"\n        },\n        {\n            \"date\": \"date3\",\n            \"description\": \"description3\",\n            \"title\": \"Announcement3\"\n        },\n        {\n            \"date\": \"date4\",\n            \"description\": \"description4\",\n            \"title\": \"Announcement4\"\n        },\n        {\n            \"date\": \"30-05-2021\",\n            \"description\": \"description5\",\n            \"title\": \"Announcement5\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "http://localhost:5000/announcement/list_all",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"date\": \"date5\",\r\n  \"description\": \"description5\",\r\n  \"title\": \"Announcement5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/announcement/list_all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"announcement",
+								"list_all"
+							]
+						}
+					},
+					"status": "UNAUTHORIZED",
+					"code": 401,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "54"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/1.0.1 Python/3.7.9"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 May 2021 09:16:15 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "Authorization failed! 'username'/'password' NOT found!"
+				},
+				{
+					"name": "http://localhost:5000/announcement/list_all",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"date\": \"date5\",\r\n  \"description\": \"description5\",\r\n  \"title\": \"Announcement5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/announcement/list_all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"announcement",
+								"list_all"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "567"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/1.0.1 Python/3.7.9"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 May 2021 09:30:43 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Announcements\": [\n        {\n            \"date\": \"date1\",\n            \"description\": \"description1\",\n            \"title\": \"Announcement1\"\n        },\n        {\n            \"date\": \"date2\",\n            \"description\": \"description2\",\n            \"title\": \"Announcement2\"\n        },\n        {\n            \"date\": \"date3\",\n            \"description\": \"description3\",\n            \"title\": \"Announcement3\"\n        },\n        {\n            \"date\": \"date4\",\n            \"description\": \"description4\",\n            \"title\": \"Announcement4\"\n        },\n        {\n            \"date\": \"30-05-2021\",\n            \"description\": \"description5\",\n            \"title\": \"Announcement5\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}

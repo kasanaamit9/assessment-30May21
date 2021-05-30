@@ -1,0 +1,108 @@
+openapi: "3.0.0"
+info:
+  description: "Wipro-Assessment"
+  version: "v1.0"
+  title: "Announcements"
+  contact:
+    email: "kasanaamit64@gmail.com"
+servers:
+- url: http://0.0.0.0:5000
+  description: DEV
+
+
+paths:
+  /announcement/list_all:
+    get:
+      tags:
+      - "Announcements"
+      summary: "lists all the announcements"
+      description: "lists all the announcements from json"
+      security:
+        - basicAuth: []
+      responses:
+        "200": 
+          description: "success"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/listResponse'
+        "401":
+          description: Authorization failed!
+        "404":
+          description: The specified system does not exist.
+        "500":
+          description: Exception occured during execution.
+  
+  /announcement/add:
+    put:
+      tags:
+      - "Announcements"
+      summary: "adds new announcement"
+      description: "adds new announcement into the existing ones"
+      security:
+        - basicAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/addAnnouncementJson'
+              
+      responses:
+        "200": 
+          description: "success"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/addAnnouncementResponse'
+        "401":
+          description: Authorization failed!
+        "404":
+          description: The specified system does not exist.
+        "500":
+          description: Exception occured during execution.
+ 
+components:
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+
+  schemas:
+    addAnnouncementJson:
+      properties:
+        title:
+          type: string
+          description: "title of the announcement"
+          title: title
+          example: "First Title"
+        description:
+          type: string
+          description: "description of the announcement"
+          title: description
+          example: "This is the first annoucement"
+        date:
+          type: string
+          description: "date of the announcement"
+          title: description
+          example: "This is the annoucement date"
+
+    listResponse:
+      properties:
+        Announcements:
+          type: object
+          example: 
+          - title: This is the first annoucement
+            description: This is the first annoucement
+            date: 25-05-2021
+          - title: Announcement2
+            description: description2
+            date: 28-05-2021
+          - title: Announcement3
+            description: description3
+            date: 30-05-2021
+
+
+    addAnnouncementResponse:
+      example: "Announcement has been added successfully"
+
